@@ -1,0 +1,60 @@
+@import "./App.scss";
+
+.erreur {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .codeErreur {
+    color: $main-color;
+    font-size: 18rem;
+    font-weight: 700;
+  }
+  .subtitleErreur {
+    text-align: center;
+    top: 65px;
+    color: $main-color;
+    font-size: $fs36;
+  }
+  a {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    color: $main-color;
+    font-size: $fs18;
+  }
+}
+
+// MEDIAQUERIES
+@media screen and (max-width: 880px) {
+  .erreur {
+    .codeErreur {
+      font-size: 10rem;
+    }
+    .subtitleErreur {
+      font-size: $fs24;
+    }
+    a {
+      padding-top: 90px;
+      padding-bottom: 40px;
+      font-size: $fs18;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .erreur {
+    .codeErreur {
+      font-size: 6rem;
+    }
+    .subtitleErreur {
+      font-size: $fs18;
+      padding: 0 15px;
+    }
+    a {
+      padding-top: 70px;
+      padding-bottom: 50px;
+      font-size: $fs14;
+    }
+  }
+}

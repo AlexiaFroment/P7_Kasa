@@ -1,0 +1,50 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Montserrat", Verdana, sans-serif;
+}
+
+.block {
+  width: 86%;
+  margin: 0px auto;
+}
+
+$main-color: #ff6060;
+$bg-color: #f6f6f6;
+$white: #ffffff;
+$black: #000000;
+
+$fs10: .625rem;
+$fs12: .75rem;
+$fs14: .875rem;
+$fs16: 1rem;
+$fs18: 1.125rem;
+$fs24: 1.5rem;
+$fs36: 2.25rem;
+$fs48: 3rem;
+
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+// MEDIAQUERIES
+@media screen and (max-width: 880px) {
+}
+@media screen and (max-width: 375px) {
+}
+

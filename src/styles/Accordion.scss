@@ -1,0 +1,93 @@
+@import "./App.scss";
+
+.accordion {
+  line-height: 25px;
+}
+.accordion.aPropos {
+  width: 86%;
+  margin: 0px auto 25px;
+}
+.accordion.logement {
+  width: 47%;
+  margin: 15px auto;
+}
+.accordionBanner {
+  cursor: pointer;
+  height: 47px;
+  padding: 20px;
+  border-radius: 5px;
+  background: $main-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    font-size: $fs18;
+    font-weight: 500;
+    color: $white;
+  }
+  .btnAccordion {
+    width: 15px;
+    height: 25px;
+    transition: transform 0.5s ease-in-out;
+  }
+  .btnAccordion.rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.accordionDetail {
+  opacity: 0;
+  font-size: $fs18;
+  font-weight: 400;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px;
+  color: $main-color;
+  background: $bg-color;
+  transition: opacity 0.4s ease-in, height 0.4s 0.4s ease-in-out;
+}
+.animated {
+  opacity: 1;
+  transition: height 0.4s ease-in-out, opacity 0.4s 0.2s ease-in;
+}
+
+@media screen and (max-width: 880px) {
+.accordion.aPropos {
+  width: 90%;
+}
+
+.accordion.logement {
+  width: 100%;
+  margin: 15px auto;
+}
+
+.accordionBanner {
+  height: 40px;
+  h3 {
+    font-size: $fs18;
+  }
+}
+.accordionDetail {
+  font-size: $fs16;
+}
+}
+
+@media screen and (max-width: 375px) {
+.accordion.aPropos {
+  width: 100%;
+}
+
+.accordionBanner {
+  height: 30px;
+  h3 {
+    font-size: $fs14;
+  }
+  .btnAccordion {
+    width: 10px;
+    height: 15px;
+  }
+}
+
+.accordionDetail {
+  font-size: $fs12;
+}
+}

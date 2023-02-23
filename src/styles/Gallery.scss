@@ -1,0 +1,23 @@
+@import "./App.scss";
+
+.galleryReception {
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  background: $bg-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+// MEDIAQUERIES
+@media screen and (max-width: 880px) {
+  .galleryReception {
+    flex-direction: column;
+    background: $white;
+    padding: 0px;
+  }
+}
+

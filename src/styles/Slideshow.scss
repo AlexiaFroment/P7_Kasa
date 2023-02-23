@@ -1,0 +1,73 @@
+@import "./App.scss";
+
+.slideShow {
+  height: 415px;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .slideShow_pictures {
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+  }
+  .slideShow_btn {
+    cursor: pointer;
+    height: 15%;
+    position: absolute;
+  }
+  .slideShow_btn_left {
+    right: 25px;
+  }
+  .slideShow_btn_right {
+    left: 25px;
+  }
+  .slideShow_folio {
+    font-size: $fs16;
+    font-weight: 500;
+    color: $white;
+    align-self: flex-end;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// MEDIAQUERIES
+@media screen and (max-width: 880px) {
+   .slideShow {
+    height: 335px;
+    border-radius: 7px;
+    
+    .slideShow_btn {
+      height: 13%;
+    }
+    .slideShow_btn_left {
+      right: 10px;
+    }
+    .slideShow_btn_right {
+      left: 10px;
+    }
+    .slideShow_folio {
+     font-size: $fs14;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .slideShow {
+    height: 255px;
+    border-radius: 10px;
+    
+    .slideShow_btn {
+      height: 10%;
+    }
+    
+    .slideShow_folio {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "./App.scss";
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  top: 30px;
+  background: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logoFooter {
+    position: absolute;
+    width: 122px;
+    height: 40px;
+    top: 66px;
+  }
+
+  .legalNotice {
+    position: absolute;
+    top: 134px;
+    color: $white;
+    font-size: $fs24;
+    line-height: 35px;
+  }
+
+}
+
+// MEDIAQUERIES
+@media screen and (max-width: 880px) {
+  .footer{
+    .legalNotice {
+      font-size: $fs18;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    height: 150px;
+    .logoFooter {
+      top: 50px;
+    }
+    .legalNotice {
+      top: 90px;
+      font-size: $fs14;
+    }
+  }
+}

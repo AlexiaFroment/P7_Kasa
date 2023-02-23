@@ -1,0 +1,63 @@
+@import "./App.scss";
+
+// COMMUN A TOUTES LES BANNIERES
+.banner {
+  width: 100%;
+  height: 225px;
+  border-radius: 25px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+// ACCUEIL
+.bannerHome {
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/images/imgBannierHomeD.webp);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  .titleBanner {
+    color: $white;
+    font-size: $fs48;
+    font-weight: 500;
+  }
+}
+
+// ABOUTIT
+.bannerAboutIt {
+  background: $bg-color;
+  background-image: url(../assets/images/imgBannierAproposD.webp);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+// MEDIAQUERIES
+@media screen and (max-width: 880px) {
+  .banner {
+    border-radius: 17px;
+  }
+  .bannerHome {
+    padding: 15px;
+    text-align: center;
+    .titleBanner {
+      font-size: $fs36;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .bannerHome {
+    justify-content: flex-start;
+    text-align: left;
+    .titleBanner {
+      width: 220px;
+      font-size: $fs24;
+    }
+  }
+}
