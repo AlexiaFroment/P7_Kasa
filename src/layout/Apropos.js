@@ -1,8 +1,7 @@
 import "../styles/App.scss";
-import "../styles/Apropos.scss";
 import Banner from "../compoments/Banner";
 import Accordion from "../compoments/Accordion";
-import dataAboutIt from "../dataAboutIt.json";
+import dataAboutIt from "../assets/data/dataAboutIt.json";
 
 export default function Apropos() {
   return (

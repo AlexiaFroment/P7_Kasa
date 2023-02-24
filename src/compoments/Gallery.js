@@ -1,6 +1,6 @@
-import "../styles/Gallery.scss";
+import "../styles/App.scss";
 import CardHouse from "./CardHouse";
-import dataBase from "../dataBase.json";
+import dataBase from "../assets/data/dataBase.json";
 
 export default function Gallery() {
   return (

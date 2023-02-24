@@ -1,5 +1,4 @@
 import '../styles/App.scss';
-import '../styles/Footer.scss';
 import logoFooter from '../assets/images/Logo_Footer.png';
 
 export default function Footer() {

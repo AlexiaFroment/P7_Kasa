@@ -1,5 +1,4 @@
 import "../styles/App.scss";
-import "../styles/Accordion.scss";
 import { useState, useRef, useEffect } from "react";
 import AccordionImg from "../assets/images/accordion.svg";
 

@@ -1,15 +1,12 @@
-@import "./App.scss";
-
 .footer {
+  @include col;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 100%;
+  width: $w100;
   height: 210px;
   top: 30px;
   background: $black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   .logoFooter {
     position: absolute;
@@ -25,12 +22,11 @@
     font-size: $fs24;
     line-height: 35px;
   }
-
 }
 
 // MEDIAQUERIES
 @media screen and (max-width: 880px) {
-  .footer{
+  .footer {
     .legalNotice {
       font-size: $fs18;
     }

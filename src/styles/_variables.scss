@@ -1,0 +1,26 @@
+// COLOR
+$main-color: #ff6060;
+$bg-color: #f6f6f6;
+$white: #ffffff;
+$black: #000000;
+
+// POLICES
+$fs10: 0.625rem;
+$fs12: 0.75rem;
+$fs14: 0.875rem;
+$fs16: 1rem;
+$fs18: 1.125rem;
+$fs24: 1.5rem;
+$fs36: 2.25rem;
+$fs48: 3rem;
+$fsnav: clamp($fs12, 3vw, $fs24);
+
+$fw400: 400;
+$fw500: 500;
+$fw700: 700;
+
+// WIDTH
+$w47: 47%;
+$w86: 86%;
+$w90: 90%;
+$w100: 100%;

@@ -1,8 +1,6 @@
-@import "./App.scss";
-
 // COMMUN A TOUTES LES BANNIERES
 .banner {
-  width: 100%;
+  width: $w100;
   height: 225px;
   border-radius: 25px;
   align-items: center;
@@ -15,13 +13,10 @@
   display: flex;
   justify-content: center;
   background-image: url(../assets/images/imgBannierHomeD.webp);
-  background-size: cover;
-  background-position: center;
+  @include photocenter;
   background-blend-mode: darken;
-  .titleBanner {
-    color: $white;
-    font-size: $fs48;
-    font-weight: 500;
+  h1 {
+    @include h1
   }
 }
 
@@ -29,8 +24,7 @@
 .bannerAboutIt {
   background: $bg-color;
   background-image: url(../assets/images/imgBannierAproposD.webp);
-  background-size: cover;
-  background-position: center;
+  @include photocenter;
   background-blend-mode: darken;
 }
 
@@ -42,9 +36,6 @@
   .bannerHome {
     padding: 15px;
     text-align: center;
-    .titleBanner {
-      font-size: $fs36;
-    }
   }
 }
 @media screen and (max-width: 375px) {
@@ -56,10 +47,6 @@
     justify-content: flex-start;
     text-align: left;
      background-image: url(../assets/images/imgBannierHomeM.webp);
-    .titleBanner {
-      width: 220px;
-      font-size: $fs24;
-    }
   }
   .bannerAboutIt {
   background-image: url(../assets/images/imgBannierAproposM.webp);

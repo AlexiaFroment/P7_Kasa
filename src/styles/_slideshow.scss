@@ -1,22 +1,20 @@
-@import "./App.scss";
-
 .slideShow {
   height: 415px;
-  width: 100%;
+  width: $w100;
   border-radius: 25px;
   display: flex;
   align-items: center;
   position: relative;
 
   .slideShow_pictures {
-    background-position: center;
-    object-fit: cover;
+  @include photo100;
+  
     position: absolute;
   }
   .slideShow_btn {
+    position: absolute;
     cursor: pointer;
     height: 15%;
-    position: absolute;
   }
   .slideShow_btn_left {
     right: 25px;
@@ -25,13 +23,13 @@
     left: 25px;
   }
   .slideShow_folio {
+    position: absolute;
     font-size: $fs16;
-    font-weight: 500;
+    font-weight: $fw500;
     color: $white;
     align-self: flex-end;
     text-align: center;
     padding: 25px;
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }

@@ -1,4 +1,4 @@
-import "../styles/CardHouse.scss";
+import "../styles/App.scss";
 import { Link } from "react-router-dom";
 
 export default function CardHouse(props) {

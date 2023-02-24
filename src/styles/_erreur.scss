@@ -1,15 +1,13 @@
-@import "./App.scss";
-
 .erreur {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include col;
   justify-content: center;
   align-items: center;
+  width: $w100;
+  
   .codeErreur {
     color: $main-color;
     font-size: 18rem;
-    font-weight: 700;
+    font-weight: $fw700;
   }
   .subtitleErreur {
     text-align: center;

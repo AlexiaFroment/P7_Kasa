@@ -1,7 +1,5 @@
-@import "./App.scss";
-
 .navbar {
-  width: 86%;
+  width: $w86;
   height: 68px;
   margin: 40px auto;
   display: flex;
@@ -12,18 +10,17 @@
   height: 68px;
 }
 .link {
-  display: flex;
-  justify-content: space-between;
+  @include spaceb;
   align-items: center;
   margin-left: auto;
   a {
     color: $main-color;
-    font-size: $fs24;
+    font-size: $fsnav;
     margin-left: $fs48;
     width: auto;
   }
   .linkActive {
-    text-decoration: underline solid $main-color ;
+    text-decoration: underline solid $main-color;
   }
 }
 
@@ -34,16 +31,15 @@
     height: 55px;
   }
   .navbar {
-    width: 86%;
+    width: $w86;
     height: 47px;
     top: 20px;
   }
-.link {
-  a {
-     font-size: $fs18;
-     margin-left: $fs24;
+  .link {
+    a {
+      margin-left: $fs24;
+    }
   }
-}
 }
 @media screen and (max-width: 375px) {
   .logoNavbar {
@@ -51,14 +47,11 @@
     height: 47px;
   }
   .navbar {
-    width: 90%;
+    width: $w90;
     height: 47px;
     top: 20px;
   }
-.link {
-  height: 17px;
-  a {
-    font-size: $fs14;
+  .link {
+    height: 17px;
   }
-}
 }

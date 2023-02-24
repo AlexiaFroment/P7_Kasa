@@ -1,5 +1,4 @@
 import "../styles/App.scss";
-import "../styles/Slideshow.scss";
 import { useState } from "react";
 import ArrowBack from "../assets/images/arrow_back_24px.svg";
 import ArrowForward from "../assets/images/arrow_forward_24px.svg";
@@ -35,13 +34,13 @@ export default function Slidershow(props) {
         className='slideShow_btn slideShow_btn_right'
         src={ArrowBack}
         alt='next slide'
-        onClick={nextSlide}
+        onClick={prevSlide}
       />
       <img
         className='slideShow_btn slideShow_btn_left'
         src={ArrowForward}
         alt='prev slide'
-        onClick={prevSlide}
+        onClick={nextSlide}
       />
       <p className='slideShow_folio'>
         {currentFolio + 1}/{props.imagesSlideshow.length}

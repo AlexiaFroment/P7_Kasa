@@ -1,5 +1,3 @@
-@import "./App.scss";
-
 .cardHouse {
   cursor: pointer;
   width: 340px;
@@ -9,16 +7,9 @@
   position: relative;
 
   img {
-    width: 100%;
-    height: 100%;
+    @include photo100;
     border-radius: 10px;
-    background-position: center;
-    object-fit: cover;
-    // ⚠️ ATTENTION MAUVAIS REGLAGES
     filter: brightness(0.8);
-    // background-color: black;
-    // background-blend-mode: darken;
-    // position: relative;
   }
   p {
     position: absolute;
@@ -32,7 +23,7 @@
 // MEDIAQUERIES
 @media screen and (max-width: 885px) {
   .cardHouse {
-    width: 90%;
+    width: $w90;
     height: 320px;
     margin: 20px auto;
   }
@@ -40,7 +31,7 @@
 
 @media screen and (max-width: 375px) {
   .cardHouse {
-    width: 100%;
+    width: $w100;
     height: 255px;
     p {
       top: 210px;

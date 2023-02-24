@@ -1,4 +1,4 @@
-import "../styles/Navbar.scss";
+import "../styles/App.scss";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/images/Logo_Navbar.png"
 

@@ -1,8 +1,7 @@
 import "../styles/App.scss";
-import "../styles/Logement.scss";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import dataBase from "../dataBase.json";
+import dataBase from "../assets/data/dataBase.json";
 import Slideshow from "../compoments/Slideshow";
 import TitleHousing from "../compoments/TitleHousing";
 import Accordion from "../compoments/Accordion";

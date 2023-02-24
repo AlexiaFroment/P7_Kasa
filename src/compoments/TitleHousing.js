@@ -1,4 +1,4 @@
-import "../styles/TitleHousing.scss";
+import "../styles/App.scss";
 
 export default function TitleHousing(props) {
   return (

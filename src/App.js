@@ -1,10 +1,10 @@
-import { Routes, Route } from "react-router-dom";
 import "./styles/App.scss";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./compoments/Navbar";
 import Accueil from "./layout/Accueil";
 import Apropos from "./layout/Apropos";
-import Erreur from "./layout/Erreur";
 import Logement from "./layout/Logement";
-import Navbar from "./compoments/Navbar";
+import Erreur from "./layout/Erreur";
 import Footer from "./compoments/Footer";
 // import CardHouse from "./compoments/CardHouse";
 

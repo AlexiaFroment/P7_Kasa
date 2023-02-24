@@ -1,0 +1,55 @@
+@mixin photo100 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+
+@mixin photocenter {
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin spaceb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin h1 {
+  color: $white;
+  font-size: $fs48;
+  font-weight: $fw500;
+  @media screen and (max-width: 880px) {
+    font-size: $fs36;
+  }
+  @media screen and (max-width: 375px) {
+    width: 220px;
+    font-size: $fs24;
+  }
+}
+@mixin h2 {
+  padding-bottom: 5px;
+  font-size: $fs36;
+  font-weight: $fw500;
+  color: $main-color;
+  @media screen and (max-width: 880px) {
+    font-size: $fs24;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: $fs18;
+  }
+}
+@mixin h3 {
+  font-size: $fs18;
+  font-weight: $fw500;
+  color: $white;
+
+  @media screen and (max-width: 375px) {
+    font-size: $fs14;
+  }
+}
