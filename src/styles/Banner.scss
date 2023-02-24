@@ -55,9 +55,13 @@
   .bannerHome {
     justify-content: flex-start;
     text-align: left;
+     background-image: url(../assets/images/imgBannierHomeM.webp);
     .titleBanner {
       width: 220px;
       font-size: $fs24;
     }
   }
+  .bannerAboutIt {
+  background-image: url(../assets/images/imgBannierAproposM.webp);
+}
 }

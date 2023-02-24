@@ -1,7 +1,7 @@
-import ".././styles/App.scss";
-import ".././styles/Accordion.scss";
+import "../styles/App.scss";
+import "../styles/Accordion.scss";
 import { useState, useRef, useEffect } from "react";
-import AccordionImg from ".././assets/images/accordion.svg";
+import AccordionImg from "../assets/images/accordion.svg";
 
 export default function Accordion(props) {
   const [toggle, setToggle] = useState(false);

@@ -1,4 +1,3 @@
-// import React from "react";
 import "../styles/TitleHousing.scss";
 
 export default function TitleHousing(props) {
