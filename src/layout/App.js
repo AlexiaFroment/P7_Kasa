@@ -1,11 +1,11 @@
-import "./styles/App.scss";
+import "../styles/App.scss";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./compoments/Navbar";
-import Accueil from "./layout/Accueil";
-import Apropos from "./layout/Apropos";
-import Logement from "./layout/Logement";
-import Erreur from "./layout/Erreur";
-import Footer from "./compoments/Footer";
+import Navbar from "../compoments/Navbar";
+import Footer from "../compoments/Footer";
+import Accueil from "./Accueil";
+import Apropos from "./Apropos";
+import Logement from "./Logement";
+import Erreur from "./Erreur";
 // import CardHouse from "./compoments/CardHouse";
 
 function App() {
