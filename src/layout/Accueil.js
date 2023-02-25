@@ -1,7 +1,6 @@
 import "../styles/App.scss";
 import Banner from "../compoments/Banner";
 import Gallery from "../compoments/Gallery";
-import { Outlet } from "react-router-dom";
 
 export default function Accueil() {
   return (
@@ -12,7 +11,6 @@ export default function Accueil() {
       title={"Chez vous, partout et ailleurs"}
        />
       <Gallery />
-      <Outlet />
     </div>
     </>
   );

@@ -6,7 +6,6 @@ import Accueil from "./Accueil";
 import Apropos from "./Apropos";
 import Logement from "./Logement";
 import Erreur from "./Erreur";
-// import CardHouse from "./compoments/CardHouse";
 
 function App() {
 
