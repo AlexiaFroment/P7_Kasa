@@ -20,7 +20,7 @@ export default function TitleHousing(props) {
           <img
             className='ownerPic'
             src={props.img}
-            alt='photo du propriétaire'
+            alt='Propriétaire'
           />
         </div>
         <div className='housingRating'>
